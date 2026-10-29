@@ -142,7 +142,7 @@ Each query is appended to `logs/queries.jsonl`; `python -m src.log_report` print
 
 ## What I would do differently
 
-Since this RAG project is for me to learn and actually build a pdf notes dictionary of my questions, it needs more refining work to do since it can only detect structural broken LaTeX. What I would do in the future is to definitely put in the ai models like ministral-14b-2512 to become the cross check personnel, and crosscheck with another gemini model on its answers.
+Firstly, the chunk size needs to be fixed. Some chunks are longer than the embedding model can read, so I would rechunk them by tokens and rerun E1 to E3. Secondly, since this current progress can only detect structural broken LaTeX, in the future I'd put in AI models like ministral-14b-2512 to become the cross check personnel and crosscheck with another gemini model on its answers.
 
 ## Setup and run
 
