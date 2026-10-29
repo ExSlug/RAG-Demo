@@ -1,0 +1,49 @@
+# DECISIONS
+
+One line per decision: what was decided, and why.
+
+- Python 3.12 in `.venv/` (the project spec asks for 3.11+). Reason: 3.12.3 is the version installed on this machine.
+- Pins in `requirements.txt` are the latest PyPI versions on 2026-10-27. Reason: the project spec says pin versions. Re-check the MCP SDK API before M8.
+- `pytest.ini` sets `pythonpath = .`. Reason: lets tests run `import src.*` without installing the project.
+- `.gitignore` also ignores `.venv/` and `__pycache__/`. Reason: standard Python noise, not in the project spec but harmless.
+- Model names come from `.env` (`TRANSCRIBE_MODEL`, `ANSWER_MODEL`), both set to `gemini-3.5-flash-lite` (see the M2 entry below). Reason: my instruction, and the project spec says never hardcode model names.
+- `PROVIDER=gemini` and `EMBED_MODEL=BAAI/bge-small-en-v1.5` added to `.env` and `.env.example`. Reason: the project spec, section 4 and 9.
+- Model name checked against Google's docs in M2. Result: the valid ID is `gemini-3.5-flash-lite` (see M2 entry below).
+- No `git init`. Reason: the folder is not a repo and nobody asked for one.
+- Folders `data/`, `cache/`, `logs/` are created empty. `eval/` and `results/` are committed, so they stay in the tree. Reason: the project spec, section 5 and 6.
+- Model ID is `gemini-3.5-flash-lite`, not `gemini-flash-3.5-lite` as I first typed. Reason: Google's model page (ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite) uses that ID. Changed in `.env` and `.env.example`. Verified by a real 26-page transcription run.
+- Only the Gemini backend is wired in `src/llm.py`. Reason: my default is gemini. Anthropic raises a clear error until needed.
+- Transcription uses temperature 0. Reason: same page should give the same Markdown on a rerun.
+- Vision retries on HTTP 429, 500 and 503 with 1, 2, 4, 8 second waits. Reason: the project spec says retry with backoff on rate limits.
+- `src/latex_check.py` bodies were written by Claude at my request, keeping my function names.
+- M3 token rule: one token = one whitespace-separated word. Reason: no extra tokenizer dependency, and the chunk sizes (500, 80, 800) only need a rough scale. Real model tokens are about 1.3x words, so chunks will be somewhat smaller in model terms.
+- M3 chunk ids: `<file stem>:<strategy>:<index>`, unique within a strategy. Reason: a chunk id must say which strategy made it, so E2 runs don't mix up records.
+- M3 bodies: `safe_cut_points` and `chunk_per_page` are mine. `chunk_fixed` and `chunk_by_heading` were written by Claude after I got stuck.
+- M3 cut rule: a chunk may end just before a space (only that side is checked). Reason: the other side gives the same words; checked on the real notes, the word content between cuts is identical. Simpler to read.
+- M4 embedding model: `BAAI/bge-small-en-v1.5` (384 dimensions), run locally through sentence-transformers. Reason: the project spec, section 4, no API key.
+- M4 query prefix: BGE's search prefix is added to queries only, not to chunks. Reason: BGE was trained that way. Source: the model card.
+- M4 index name: `<strategy>_<method>`, e.g. `fixed_vision`, under `cache/index/`. Reason: E2 and E3 need several indexes side by side.
+- M4 scaffold: `src/retrieval.py` (cosine top-k) is mine. Claude wrote `embed.py`, `build_index.py` and `search_cli.py`.
+- M5 eval depth: each question retrieves the top 10 chunks. recall@1/3/5 use the first 1, 3 and 5 of those. MRR looks at all 10, so a miss beyond rank 10 scores 0. Reason: with 15 to 39 chunks per index, 10 is deep enough to see where the gold page lands, and it stays fixed across E1 to E3.
+- M5 baseline index: `per_page_vision` (26 chunks). Reason: the project spec fixes E1 at per_page, dense, k=5.
+- M5 page map: `cache/page_map.md` lists each page's headings so I can find gold pages. It is in cache/, so it stays out of git (it reflects private notes).
+- M5 scaffold: `src/metrics.py` is mine. Claude wrote `validate_questions.py` and `eval_run.py`.
+- M5 q19 changed from option pricing to volatility. Reason: option pricing is covered on pages 1, 2, 24 to 26, so it was answerable. The word volatility appears nowhere in the notes (checked with a text search).
+- M6 best ingestion for E2: vision, although E1 is a near tie (see results). Reason: the heading strategy needs Markdown, vision has higher recall@5 (0.84 vs 0.75), and M7 generation needs readable formulas. Stated as a judgment, not as proof that vision retrieves better.
+- M6 best chunking for E3: per_page. Selection rule, fixed before running E3: highest MRR, ties go to recall@3. Per-page 0.77, heading 0.74, fixed 0.65.
+- M6 caveat: recall@k is not comparable across chunk sizes. A fixed chunk covers 2 to 3 pages, so the same k covers more pages than with per_page. MRR and recall@1 are the fairer numbers across strategies.
+- M6 best retrieval: dense (MRR 0.77). Hybrid scored 0.71 and was not tuned. Reason: selection rule is highest MRR, and tuning k after seeing results would be fitting to the test set. The MCP server (M8) will use per_page + vision + dense.
+- M7 abstention phrase: `ABSTAIN = "Not in the notes."`, defined once in `src/citation_check.py` and imported by `src/generate.py`. Reason: the prompt and the check must never disagree by a character.
+- M7 citation tag format: `[file p.N]`, one tag per page. A multi-page chunk shows one tag per page in its label. Reason: tags the check can parse with one pattern; per_page chunks (best config) give exact labels.
+- M7 generation setup: retrieval from `per_page_vision`, dense, top 5, temperature 0, model from `ANSWER_MODEL`. Reason: best config from E1 to E3 per the pre-set rule.
+- M7 strictness: a citation counts as valid only if its page is in the retrieved chunks, even when the page does contain the fact. Reason: the project spec, section 10; it keeps every citation traceable to what the model was shown.
+- M7: citation parser tightened to `[file p.N]` with a file name of no spaces or brackets (reason: loose `.+?` pattern merged grouped tags into a fake file name). Check stays strict about the exact label; grouped tags like `[F p.1, F p.2]` and `FYP\_notes.pdf` count as format violations, not accepted (reason: a lenient check hides how the model behaves). Run 1 (old parser) kept as results/generation_per_page_dense.json; run 2 (new parser) is generation_per_page_dense_v2.json. Prompt not tuned after seeing results.
+- M8: MCP SDK is 2.x, so the server uses `MCPServer` (renamed from `FastMCP`). Reason: `mcp.server.fastmcp` no longer exists in 2.x.
+- M8: server sets HF_HUB_OFFLINE=1 and loads the embedding model in a background thread at start. Reason: first search took 47 s (model load plus HuggingFace checks); now about 16 s cold, 3 to 5 ms warm.
+- M8: server returns one result per chunk with `page = pages[0]`. Reason: the best config (per_page) has exactly one page per chunk; multi-page chunks would need one result per page.
+- M8: one shared `src/search.py` (embed + retrieve with stage timings) is used by the server and by generate.py, with absolute paths from the project folder. Reason: same logged fields everywhere, works from any working directory.
+- M8: registration uses the venv python by absolute path plus PYTHONPATH set to the project folder. Reason: Claude Code starts the server from its own working directory.
+- M8: registered through a project `.mcp.json` (gitignored) because I use the desktop app and has no `claude` command on PATH. Reason: same effect as `claude mcp add`, and it holds personal absolute paths.
+- M8 finding (for README): live test through Claude Code. Question in the notes (Krawtchouk generating function) answered with page citations. Question not in the notes (option pricing formula): the client model said the notes did not cover it, then answered from memory anyway. Reason it matters: the abstain rule and citation_check live in generate.py, but over MCP the client model writes the answer, so the server can only ask (tool description), not enforce. Not fixed; reported as a limitation. Token counts are 0 in log_report for server calls because the server calls no LLM and cannot see the client's usage.
+- M9 finding: chunk sizes are in words (the project spec 'about 500 tokens'), but bge-small reads at most 512 model tokens and truncates the rest. Measured on cache/index: per_page 7 of 26 chunks over the limit, fixed 14 of 15 (median about 960 model tokens), heading 5 of 39. Not fixed and E1 to E3 not re-run, because changing sizes after seeing results would be tuning on the eval set. Reported in README Limitations; E2 fixed-vs-others is partly an embedding-truncation effect.
+- Two personal working-notes files are kept local (gitignored). Reason: they are not project documentation.

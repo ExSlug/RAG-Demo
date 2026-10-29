@@ -1,0 +1,1553 @@
+{
+  "index": "heading_vision",
+  "retrieval": "dense",
+  "depth": 10,
+  "run_at": "2026-10-28T10:06:14+00:00",
+  "overall": {
+    "n": 18,
+    "recall@1": 0.4954,
+    "recall@3": 0.8611,
+    "recall@5": 0.8611,
+    "mrr": 0.7407
+  },
+  "math": {
+    "n": 11,
+    "recall@1": 0.7879,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "mrr": 0.9545
+  },
+  "not_math": {
+    "n": 7,
+    "recall@1": 0.0357,
+    "recall@3": 0.6429,
+    "recall@5": 0.6429,
+    "mrr": 0.4048
+  },
+  "per_question": [
+    {
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "id": "q01",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0039",
+          "pages": [
+            26
+          ],
+          "score": 0.6127
+        },
+        {
+          "id": "FYP_notes:heading:0037",
+          "pages": [
+            24,
+            25
+          ],
+          "score": 0.6124
+        },
+        {
+          "id": "FYP_notes:heading:0001",
+          "pages": [
+            1
+          ],
+          "score": 0.5986
+        },
+        {
+          "id": "FYP_notes:heading:0025",
+          "pages": [
+            17
+          ],
+          "score": 0.5761
+        },
+        {
+          "id": "FYP_notes:heading:0011",
+          "pages": [
+            7
+          ],
+          "score": 0.5753
+        },
+        {
+          "id": "FYP_notes:heading:0004",
+          "pages": [
+            3
+          ],
+          "score": 0.5726
+        },
+        {
+          "id": "FYP_notes:heading:0030",
+          "pages": [
+            20
+          ],
+          "score": 0.5684
+        },
+        {
+          "id": "FYP_notes:heading:0014",
+          "pages": [
+            8
+          ],
+          "score": 0.5651
+        },
+        {
+          "id": "FYP_notes:heading:0003",
+          "pages": [
+            3
+          ],
+          "score": 0.5597
+        },
+        {
+          "id": "FYP_notes:heading:0026",
+          "pages": [
+            17
+          ],
+          "score": 0.5544
+        }
+      ]
+    },
+    {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q02",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0003",
+          "pages": [
+            3
+          ],
+          "score": 0.7689
+        },
+        {
+          "id": "FYP_notes:heading:0004",
+          "pages": [
+            3
+          ],
+          "score": 0.6753
+        },
+        {
+          "id": "FYP_notes:heading:0015",
+          "pages": [
+            9,
+            10,
+            11
+          ],
+          "score": 0.6655
+        },
+        {
+          "id": "FYP_notes:heading:0002",
+          "pages": [
+            1,
+            2
+          ],
+          "score": 0.6614
+        },
+        {
+          "id": "FYP_notes:heading:0001",
+          "pages": [
+            1
+          ],
+          "score": 0.6462
+        },
+        {
+          "id": "FYP_notes:heading:0018",
+          "pages": [
+            12
+          ],
+          "score": 0.6451
+        },
+        {
+          "id": "FYP_notes:heading:0011",
+          "pages": [
+            7
+          ],
+          "score": 0.6444
+        },
+        {
+          "id": "FYP_notes:heading:0019",
+          "pages": [
+            12,
+            13
+          ],
+          "score": 0.6383
+        },
+        {
+          "id": "FYP_notes:heading:0026",
+          "pages": [
+            17
+          ],
+          "score": 0.6366
+        },
+        {
+          "id": "FYP_notes:heading:0014",
+          "pages": [
+            8
+          ],
+          "score": 0.636
+        }
+      ]
+    },
+    {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q03",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0005",
+          "pages": [
+            4
+          ],
+          "score": 0.7666
+        },
+        {
+          "id": "FYP_notes:heading:0014",
+          "pages": [
+            8
+          ],
+          "score": 0.7119
+        },
+        {
+          "id": "FYP_notes:heading:0011",
+          "pages": [
+            7
+          ],
+          "score": 0.7083
+        },
+        {
+          "id": "FYP_notes:heading:0007",
+          "pages": [
+            4,
+            5
+          ],
+          "score": 0.6882
+        },
+        {
+          "id": "FYP_notes:heading:0004",
+          "pages": [
+            3
+          ],
+          "score": 0.6716
+        },
+        {
+          "id": "FYP_notes:heading:0008",
+          "pages": [
+            5
+          ],
+          "score": 0.6634
+        },
+        {
+          "id": "FYP_notes:heading:0006",
+          "pages": [
+            4
+          ],
+          "score": 0.6357
+        },
+        {
+          "id": "FYP_notes:heading:0003",
+          "pages": [
+            3
+          ],
+          "score": 0.6328
+        },
+        {
+          "id": "FYP_notes:heading:0012",
+          "pages": [
+            7,
+            8
+          ],
+          "score": 0.6195
+        },
+        {
+          "id": "FYP_notes:heading:0009",
+          "pages": [
+            6
+          ],
+          "score": 0.5991
+        }
+      ]
+    },
+    {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q04",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0005",
+          "pages": [
+            4
+          ],
+          "score": 0.8261
+        },
+        {
+          "id": "FYP_notes:heading:0014",
+          "pages": [
+            8
+          ],
+          "score": 0.7461
+        },
+        {
+          "id": "FYP_notes:heading:0011",
+          "pages": [
+            7
+          ],
+          "score": 0.7422
+        },
+        {
+          "id": "FYP_notes:heading:0009",
+          "pages": [
+            6
+          ],
+          "score": 0.6904
+        },
+        {
+          "id": "FYP_notes:heading:0008",
+          "pages": [
+            5
+          ],
+          "score": 0.69
+        },
+        {
+          "id": "FYP_notes:heading:0007",
+          "pages": [
+            4,
+            5
+          ],
+          "score": 0.6877
+        },
+        {
+          "id": "FYP_notes:heading:0012",
+          "pages": [
+            7,
+            8
+          ],
+          "score": 0.6767
+        },
+        {
+          "id": "FYP_notes:heading:0004",
+          "pages": [
+            3
+          ],
+          "score": 0.6741
+        },
+        {
+          "id": "FYP_notes:heading:0020",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 0.6623
+        },
+        {
+          "id": "FYP_notes:heading:0026",
+          "pages": [
+            17
+          ],
+          "score": 0.6584
+        }
+      ]
+    },
+    {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q05",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0013",
+          "pages": [
+            8
+          ],
+          "score": 0.7904
+        },
+        {
+          "id": "FYP_notes:heading:0012",
+          "pages": [
+            7,
+            8
+          ],
+          "score": 0.6748
+        },
+        {
+          "id": "FYP_notes:heading:0020",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 0.6464
+        },
+        {
+          "id": "FYP_notes:heading:0011",
+          "pages": [
+            7
+          ],
+          "score": 0.6421
+        },
+        {
+          "id": "FYP_notes:heading:0039",
+          "pages": [
+            26
+          ],
+          "score": 0.6382
+        },
+        {
+          "id": "FYP_notes:heading:0016",
+          "pages": [
+            11
+          ],
+          "score": 0.6369
+        },
+        {
+          "id": "FYP_notes:heading:0009",
+          "pages": [
+            6
+          ],
+          "score": 0.6314
+        },
+        {
+          "id": "FYP_notes:heading:0019",
+          "pages": [
+            12,
+            13
+          ],
+          "score": 0.6274
+        },
+        {
+          "id": "FYP_notes:heading:0015",
+          "pages": [
+            9,
+            10,
+            11
+          ],
+          "score": 0.6152
+        },
+        {
+          "id": "FYP_notes:heading:0002",
+          "pages": [
+            1,
+            2
+          ],
+          "score": 0.6109
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 0.5,
+      "id": "q06",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0011",
+          "pages": [
+            7
+          ],
+          "score": 0.5045
+        },
+        {
+          "id": "FYP_notes:heading:0014",
+          "pages": [
+            8
+          ],
+          "score": 0.5025
+        },
+        {
+          "id": "FYP_notes:heading:0036",
+          "pages": [
+            23,
+            24
+          ],
+          "score": 0.4962
+        },
+        {
+          "id": "FYP_notes:heading:0026",
+          "pages": [
+            17
+          ],
+          "score": 0.4944
+        },
+        {
+          "id": "FYP_notes:heading:0031",
+          "pages": [
+            20
+          ],
+          "score": 0.4911
+        },
+        {
+          "id": "FYP_notes:heading:0020",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 0.4897
+        },
+        {
+          "id": "FYP_notes:heading:0017",
+          "pages": [
+            11
+          ],
+          "score": 0.4883
+        },
+        {
+          "id": "FYP_notes:heading:0008",
+          "pages": [
+            5
+          ],
+          "score": 0.4881
+        },
+        {
+          "id": "FYP_notes:heading:0005",
+          "pages": [
+            4
+          ],
+          "score": 0.4858
+        },
+        {
+          "id": "FYP_notes:heading:0030",
+          "pages": [
+            20
+          ],
+          "score": 0.4831
+        }
+      ]
+    },
+    {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q07",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0021",
+          "pages": [
+            15,
+            16
+          ],
+          "score": 0.8072
+        },
+        {
+          "id": "FYP_notes:heading:0034",
+          "pages": [
+            22,
+            23
+          ],
+          "score": 0.7915
+        },
+        {
+          "id": "FYP_notes:heading:0023",
+          "pages": [
+            16
+          ],
+          "score": 0.7887
+        },
+        {
+          "id": "FYP_notes:heading:0025",
+          "pages": [
+            17
+          ],
+          "score": 0.772
+        },
+        {
+          "id": "FYP_notes:heading:0024",
+          "pages": [
+            16,
+            17
+          ],
+          "score": 0.7684
+        },
+        {
+          "id": "FYP_notes:heading:0032",
+          "pages": [
+            21
+          ],
+          "score": 0.7647
+        },
+        {
+          "id": "FYP_notes:heading:0033",
+          "pages": [
+            22
+          ],
+          "score": 0.7603
+        },
+        {
+          "id": "FYP_notes:heading:0022",
+          "pages": [
+            16
+          ],
+          "score": 0.7537
+        },
+        {
+          "id": "FYP_notes:heading:0035",
+          "pages": [
+            23
+          ],
+          "score": 0.7088
+        },
+        {
+          "id": "FYP_notes:heading:0020",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 0.7074
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 0.5,
+      "id": "q08",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0017",
+          "pages": [
+            11
+          ],
+          "score": 0.5896
+        },
+        {
+          "id": "FYP_notes:heading:0026",
+          "pages": [
+            17
+          ],
+          "score": 0.5882
+        },
+        {
+          "id": "FYP_notes:heading:0012",
+          "pages": [
+            7,
+            8
+          ],
+          "score": 0.578
+        },
+        {
+          "id": "FYP_notes:heading:0020",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 0.5661
+        },
+        {
+          "id": "FYP_notes:heading:0015",
+          "pages": [
+            9,
+            10,
+            11
+          ],
+          "score": 0.5627
+        },
+        {
+          "id": "FYP_notes:heading:0036",
+          "pages": [
+            23,
+            24
+          ],
+          "score": 0.5601
+        },
+        {
+          "id": "FYP_notes:heading:0024",
+          "pages": [
+            16,
+            17
+          ],
+          "score": 0.5485
+        },
+        {
+          "id": "FYP_notes:heading:0013",
+          "pages": [
+            8
+          ],
+          "score": 0.5479
+        },
+        {
+          "id": "FYP_notes:heading:0021",
+          "pages": [
+            15,
+            16
+          ],
+          "score": 0.5389
+        },
+        {
+          "id": "FYP_notes:heading:0016",
+          "pages": [
+            11
+          ],
+          "score": 0.5343
+        }
+      ]
+    },
+    {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q09",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0010",
+          "pages": [
+            6
+          ],
+          "score": 0.6837
+        },
+        {
+          "id": "FYP_notes:heading:0029",
+          "pages": [
+            19,
+            20
+          ],
+          "score": 0.5731
+        },
+        {
+          "id": "FYP_notes:heading:0036",
+          "pages": [
+            23,
+            24
+          ],
+          "score": 0.563
+        },
+        {
+          "id": "FYP_notes:heading:0038",
+          "pages": [
+            25
+          ],
+          "score": 0.5564
+        },
+        {
+          "id": "FYP_notes:heading:0031",
+          "pages": [
+            20
+          ],
+          "score": 0.5536
+        },
+        {
+          "id": "FYP_notes:heading:0009",
+          "pages": [
+            6
+          ],
+          "score": 0.5481
+        },
+        {
+          "id": "FYP_notes:heading:0030",
+          "pages": [
+            20
+          ],
+          "score": 0.5444
+        },
+        {
+          "id": "FYP_notes:heading:0004",
+          "pages": [
+            3
+          ],
+          "score": 0.5342
+        },
+        {
+          "id": "FYP_notes:heading:0026",
+          "pages": [
+            17
+          ],
+          "score": 0.5341
+        },
+        {
+          "id": "FYP_notes:heading:0018",
+          "pages": [
+            12
+          ],
+          "score": 0.5304
+        }
+      ]
+    },
+    {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q10",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0012",
+          "pages": [
+            7,
+            8
+          ],
+          "score": 0.7481
+        },
+        {
+          "id": "FYP_notes:heading:0013",
+          "pages": [
+            8
+          ],
+          "score": 0.6874
+        },
+        {
+          "id": "FYP_notes:heading:0011",
+          "pages": [
+            7
+          ],
+          "score": 0.6726
+        },
+        {
+          "id": "FYP_notes:heading:0025",
+          "pages": [
+            17
+          ],
+          "score": 0.6654
+        },
+        {
+          "id": "FYP_notes:heading:0017",
+          "pages": [
+            11
+          ],
+          "score": 0.6632
+        },
+        {
+          "id": "FYP_notes:heading:0021",
+          "pages": [
+            15,
+            16
+          ],
+          "score": 0.6547
+        },
+        {
+          "id": "FYP_notes:heading:0026",
+          "pages": [
+            17
+          ],
+          "score": 0.65
+        },
+        {
+          "id": "FYP_notes:heading:0033",
+          "pages": [
+            22
+          ],
+          "score": 0.6489
+        },
+        {
+          "id": "FYP_notes:heading:0035",
+          "pages": [
+            23
+          ],
+          "score": 0.6449
+        },
+        {
+          "id": "FYP_notes:heading:0031",
+          "pages": [
+            20
+          ],
+          "score": 0.6449
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 0.5,
+      "id": "q11",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0018",
+          "pages": [
+            12
+          ],
+          "score": 0.677
+        },
+        {
+          "id": "FYP_notes:heading:0015",
+          "pages": [
+            9,
+            10,
+            11
+          ],
+          "score": 0.6417
+        },
+        {
+          "id": "FYP_notes:heading:0003",
+          "pages": [
+            3
+          ],
+          "score": 0.6236
+        },
+        {
+          "id": "FYP_notes:heading:0019",
+          "pages": [
+            12,
+            13
+          ],
+          "score": 0.6219
+        },
+        {
+          "id": "FYP_notes:heading:0034",
+          "pages": [
+            22,
+            23
+          ],
+          "score": 0.6193
+        },
+        {
+          "id": "FYP_notes:heading:0017",
+          "pages": [
+            11
+          ],
+          "score": 0.6185
+        },
+        {
+          "id": "FYP_notes:heading:0011",
+          "pages": [
+            7
+          ],
+          "score": 0.6075
+        },
+        {
+          "id": "FYP_notes:heading:0023",
+          "pages": [
+            16
+          ],
+          "score": 0.6006
+        },
+        {
+          "id": "FYP_notes:heading:0021",
+          "pages": [
+            15,
+            16
+          ],
+          "score": 0.593
+        },
+        {
+          "id": "FYP_notes:heading:0033",
+          "pages": [
+            22
+          ],
+          "score": 0.5925
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "id": "q12",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0020",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 0.4832
+        },
+        {
+          "id": "FYP_notes:heading:0034",
+          "pages": [
+            22,
+            23
+          ],
+          "score": 0.4745
+        },
+        {
+          "id": "FYP_notes:heading:0017",
+          "pages": [
+            11
+          ],
+          "score": 0.4731
+        },
+        {
+          "id": "FYP_notes:heading:0038",
+          "pages": [
+            25
+          ],
+          "score": 0.4724
+        },
+        {
+          "id": "FYP_notes:heading:0036",
+          "pages": [
+            23,
+            24
+          ],
+          "score": 0.4678
+        },
+        {
+          "id": "FYP_notes:heading:0011",
+          "pages": [
+            7
+          ],
+          "score": 0.4579
+        },
+        {
+          "id": "FYP_notes:heading:0026",
+          "pages": [
+            17
+          ],
+          "score": 0.4574
+        },
+        {
+          "id": "FYP_notes:heading:0013",
+          "pages": [
+            8
+          ],
+          "score": 0.4563
+        },
+        {
+          "id": "FYP_notes:heading:0039",
+          "pages": [
+            26
+          ],
+          "score": 0.4557
+        },
+        {
+          "id": "FYP_notes:heading:0024",
+          "pages": [
+            16,
+            17
+          ],
+          "score": 0.4556
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 0.5,
+      "id": "q13",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0039",
+          "pages": [
+            26
+          ],
+          "score": 0.8018
+        },
+        {
+          "id": "FYP_notes:heading:0001",
+          "pages": [
+            1
+          ],
+          "score": 0.7869
+        },
+        {
+          "id": "FYP_notes:heading:0037",
+          "pages": [
+            24,
+            25
+          ],
+          "score": 0.7745
+        },
+        {
+          "id": "FYP_notes:heading:0038",
+          "pages": [
+            25
+          ],
+          "score": 0.7412
+        },
+        {
+          "id": "FYP_notes:heading:0002",
+          "pages": [
+            1,
+            2
+          ],
+          "score": 0.7352
+        },
+        {
+          "id": "FYP_notes:heading:0009",
+          "pages": [
+            6
+          ],
+          "score": 0.6679
+        },
+        {
+          "id": "FYP_notes:heading:0036",
+          "pages": [
+            23,
+            24
+          ],
+          "score": 0.664
+        },
+        {
+          "id": "FYP_notes:heading:0026",
+          "pages": [
+            17
+          ],
+          "score": 0.6519
+        },
+        {
+          "id": "FYP_notes:heading:0004",
+          "pages": [
+            3
+          ],
+          "score": 0.6455
+        },
+        {
+          "id": "FYP_notes:heading:0019",
+          "pages": [
+            12,
+            13
+          ],
+          "score": 0.6379
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 0.3333333333333333,
+      "id": "q14",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0038",
+          "pages": [
+            25
+          ],
+          "score": 0.5221
+        },
+        {
+          "id": "FYP_notes:heading:0037",
+          "pages": [
+            24,
+            25
+          ],
+          "score": 0.5076
+        },
+        {
+          "id": "FYP_notes:heading:0002",
+          "pages": [
+            1,
+            2
+          ],
+          "score": 0.5075
+        },
+        {
+          "id": "FYP_notes:heading:0039",
+          "pages": [
+            26
+          ],
+          "score": 0.504
+        },
+        {
+          "id": "FYP_notes:heading:0036",
+          "pages": [
+            23,
+            24
+          ],
+          "score": 0.5016
+        },
+        {
+          "id": "FYP_notes:heading:0030",
+          "pages": [
+            20
+          ],
+          "score": 0.5001
+        },
+        {
+          "id": "FYP_notes:heading:0020",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 0.4941
+        },
+        {
+          "id": "FYP_notes:heading:0001",
+          "pages": [
+            1
+          ],
+          "score": 0.4877
+        },
+        {
+          "id": "FYP_notes:heading:0015",
+          "pages": [
+            9,
+            10,
+            11
+          ],
+          "score": 0.4821
+        },
+        {
+          "id": "FYP_notes:heading:0017",
+          "pages": [
+            11
+          ],
+          "score": 0.4754
+        }
+      ]
+    },
+    {
+      "recall@1": 0.25,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "mrr": 1.0,
+      "id": "q15",
+      "type": "multi",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0011",
+          "pages": [
+            7
+          ],
+          "score": 0.5588
+        },
+        {
+          "id": "FYP_notes:heading:0008",
+          "pages": [
+            5
+          ],
+          "score": 0.5512
+        },
+        {
+          "id": "FYP_notes:heading:0023",
+          "pages": [
+            16
+          ],
+          "score": 0.5435
+        },
+        {
+          "id": "FYP_notes:heading:0017",
+          "pages": [
+            11
+          ],
+          "score": 0.5404
+        },
+        {
+          "id": "FYP_notes:heading:0003",
+          "pages": [
+            3
+          ],
+          "score": 0.5374
+        },
+        {
+          "id": "FYP_notes:heading:0007",
+          "pages": [
+            4,
+            5
+          ],
+          "score": 0.5321
+        },
+        {
+          "id": "FYP_notes:heading:0014",
+          "pages": [
+            8
+          ],
+          "score": 0.5298
+        },
+        {
+          "id": "FYP_notes:heading:0020",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 0.5261
+        },
+        {
+          "id": "FYP_notes:heading:0015",
+          "pages": [
+            9,
+            10,
+            11
+          ],
+          "score": 0.5233
+        },
+        {
+          "id": "FYP_notes:heading:0013",
+          "pages": [
+            8
+          ],
+          "score": 0.523
+        }
+      ]
+    },
+    {
+      "recall@1": 0.6666666666666666,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q16",
+      "type": "multi",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0021",
+          "pages": [
+            15,
+            16
+          ],
+          "score": 0.7584
+        },
+        {
+          "id": "FYP_notes:heading:0024",
+          "pages": [
+            16,
+            17
+          ],
+          "score": 0.7349
+        },
+        {
+          "id": "FYP_notes:heading:0034",
+          "pages": [
+            22,
+            23
+          ],
+          "score": 0.726
+        },
+        {
+          "id": "FYP_notes:heading:0025",
+          "pages": [
+            17
+          ],
+          "score": 0.7107
+        },
+        {
+          "id": "FYP_notes:heading:0032",
+          "pages": [
+            21
+          ],
+          "score": 0.7015
+        },
+        {
+          "id": "FYP_notes:heading:0022",
+          "pages": [
+            16
+          ],
+          "score": 0.6987
+        },
+        {
+          "id": "FYP_notes:heading:0023",
+          "pages": [
+            16
+          ],
+          "score": 0.6981
+        },
+        {
+          "id": "FYP_notes:heading:0020",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 0.6749
+        },
+        {
+          "id": "FYP_notes:heading:0031",
+          "pages": [
+            20
+          ],
+          "score": 0.6686
+        },
+        {
+          "id": "FYP_notes:heading:0033",
+          "pages": [
+            22
+          ],
+          "score": 0.6616
+        }
+      ]
+    },
+    {
+      "recall@1": 0.5,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q17",
+      "type": "multi",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0027",
+          "pages": [
+            18
+          ],
+          "score": 0.8222
+        },
+        {
+          "id": "FYP_notes:heading:0028",
+          "pages": [
+            18,
+            19
+          ],
+          "score": 0.8174
+        },
+        {
+          "id": "FYP_notes:heading:0031",
+          "pages": [
+            20
+          ],
+          "score": 0.7953
+        },
+        {
+          "id": "FYP_notes:heading:0029",
+          "pages": [
+            19,
+            20
+          ],
+          "score": 0.782
+        },
+        {
+          "id": "FYP_notes:heading:0026",
+          "pages": [
+            17
+          ],
+          "score": 0.7593
+        },
+        {
+          "id": "FYP_notes:heading:0030",
+          "pages": [
+            20
+          ],
+          "score": 0.7586
+        },
+        {
+          "id": "FYP_notes:heading:0032",
+          "pages": [
+            21
+          ],
+          "score": 0.7383
+        },
+        {
+          "id": "FYP_notes:heading:0038",
+          "pages": [
+            25
+          ],
+          "score": 0.713
+        },
+        {
+          "id": "FYP_notes:heading:0025",
+          "pages": [
+            17
+          ],
+          "score": 0.7016
+        },
+        {
+          "id": "FYP_notes:heading:0035",
+          "pages": [
+            23
+          ],
+          "score": 0.6929
+        }
+      ]
+    },
+    {
+      "recall@1": 0.5,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q18",
+      "type": "multi",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:heading:0017",
+          "pages": [
+            11
+          ],
+          "score": 0.7279
+        },
+        {
+          "id": "FYP_notes:heading:0015",
+          "pages": [
+            9,
+            10,
+            11
+          ],
+          "score": 0.6994
+        },
+        {
+          "id": "FYP_notes:heading:0018",
+          "pages": [
+            12
+          ],
+          "score": 0.6984
+        },
+        {
+          "id": "FYP_notes:heading:0022",
+          "pages": [
+            16
+          ],
+          "score": 0.6968
+        },
+        {
+          "id": "FYP_notes:heading:0033",
+          "pages": [
+            22
+          ],
+          "score": 0.6847
+        },
+        {
+          "id": "FYP_notes:heading:0019",
+          "pages": [
+            12,
+            13
+          ],
+          "score": 0.6438
+        },
+        {
+          "id": "FYP_notes:heading:0013",
+          "pages": [
+            8
+          ],
+          "score": 0.6432
+        },
+        {
+          "id": "FYP_notes:heading:0012",
+          "pages": [
+            7,
+            8
+          ],
+          "score": 0.6271
+        },
+        {
+          "id": "FYP_notes:heading:0025",
+          "pages": [
+            17
+          ],
+          "score": 0.6233
+        },
+        {
+          "id": "FYP_notes:heading:0011",
+          "pages": [
+            7
+          ],
+          "score": 0.6222
+        }
+      ]
+    }
+  ]
+}

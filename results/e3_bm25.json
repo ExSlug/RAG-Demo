@@ -1,0 +1,1487 @@
+{
+  "index": "per_page_vision",
+  "retrieval": "bm25",
+  "depth": 10,
+  "run_at": "2026-10-28T10:07:16+00:00",
+  "overall": {
+    "n": 18,
+    "recall@1": 0.2917,
+    "recall@3": 0.6157,
+    "recall@5": 0.6852,
+    "mrr": 0.5774
+  },
+  "math": {
+    "n": 11,
+    "recall@1": 0.3636,
+    "recall@3": 0.6212,
+    "recall@5": 0.6212,
+    "mrr": 0.6039
+  },
+  "not_math": {
+    "n": 7,
+    "recall@1": 0.1786,
+    "recall@3": 0.6071,
+    "recall@5": 0.7857,
+    "mrr": 0.5357
+  },
+  "per_question": [
+    {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q01",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 12.2471
+        },
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 10.1876
+        },
+        {
+          "id": "FYP_notes:per_page:0009",
+          "pages": [
+            9
+          ],
+          "score": 9.3088
+        },
+        {
+          "id": "FYP_notes:per_page:0026",
+          "pages": [
+            26
+          ],
+          "score": 9.0919
+        },
+        {
+          "id": "FYP_notes:per_page:0021",
+          "pages": [
+            21
+          ],
+          "score": 9.0363
+        },
+        {
+          "id": "FYP_notes:per_page:0024",
+          "pages": [
+            24
+          ],
+          "score": 8.8651
+        },
+        {
+          "id": "FYP_notes:per_page:0014",
+          "pages": [
+            14
+          ],
+          "score": 8.7443
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 8.5816
+        },
+        {
+          "id": "FYP_notes:per_page:0025",
+          "pages": [
+            25
+          ],
+          "score": 8.1418
+        },
+        {
+          "id": "FYP_notes:per_page:0020",
+          "pages": [
+            20
+          ],
+          "score": 8.041
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "id": "q02",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0009",
+          "pages": [
+            9
+          ],
+          "score": 7.1881
+        },
+        {
+          "id": "FYP_notes:per_page:0007",
+          "pages": [
+            7
+          ],
+          "score": 6.3282
+        },
+        {
+          "id": "FYP_notes:per_page:0013",
+          "pages": [
+            13
+          ],
+          "score": 5.4129
+        },
+        {
+          "id": "FYP_notes:per_page:0021",
+          "pages": [
+            21
+          ],
+          "score": 5.3639
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 5.3427
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 4.6795
+        },
+        {
+          "id": "FYP_notes:per_page:0024",
+          "pages": [
+            24
+          ],
+          "score": 4.6777
+        },
+        {
+          "id": "FYP_notes:per_page:0004",
+          "pages": [
+            4
+          ],
+          "score": 4.6115
+        },
+        {
+          "id": "FYP_notes:per_page:0017",
+          "pages": [
+            17
+          ],
+          "score": 4.4415
+        },
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 4.4215
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "id": "q03",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0011",
+          "pages": [
+            11
+          ],
+          "score": 6.145
+        },
+        {
+          "id": "FYP_notes:per_page:0007",
+          "pages": [
+            7
+          ],
+          "score": 5.7651
+        },
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 5.5928
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 5.4321
+        },
+        {
+          "id": "FYP_notes:per_page:0009",
+          "pages": [
+            9
+          ],
+          "score": 5.1554
+        },
+        {
+          "id": "FYP_notes:per_page:0016",
+          "pages": [
+            16
+          ],
+          "score": 4.7522
+        },
+        {
+          "id": "FYP_notes:per_page:0021",
+          "pages": [
+            21
+          ],
+          "score": 4.4244
+        },
+        {
+          "id": "FYP_notes:per_page:0005",
+          "pages": [
+            5
+          ],
+          "score": 3.7748
+        },
+        {
+          "id": "FYP_notes:per_page:0014",
+          "pages": [
+            14
+          ],
+          "score": 3.7691
+        },
+        {
+          "id": "FYP_notes:per_page:0012",
+          "pages": [
+            12
+          ],
+          "score": 3.7571
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 0.5,
+      "id": "q04",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 10.9453
+        },
+        {
+          "id": "FYP_notes:per_page:0004",
+          "pages": [
+            4
+          ],
+          "score": 8.9149
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 8.6778
+        },
+        {
+          "id": "FYP_notes:per_page:0011",
+          "pages": [
+            11
+          ],
+          "score": 8.3565
+        },
+        {
+          "id": "FYP_notes:per_page:0017",
+          "pages": [
+            17
+          ],
+          "score": 7.3733
+        },
+        {
+          "id": "FYP_notes:per_page:0022",
+          "pages": [
+            22
+          ],
+          "score": 7.2793
+        },
+        {
+          "id": "FYP_notes:per_page:0007",
+          "pages": [
+            7
+          ],
+          "score": 6.1224
+        },
+        {
+          "id": "FYP_notes:per_page:0005",
+          "pages": [
+            5
+          ],
+          "score": 5.984
+        },
+        {
+          "id": "FYP_notes:per_page:0024",
+          "pages": [
+            24
+          ],
+          "score": 5.586
+        },
+        {
+          "id": "FYP_notes:per_page:0010",
+          "pages": [
+            10
+          ],
+          "score": 5.4228
+        }
+      ]
+    },
+    {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q05",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 11.3105
+        },
+        {
+          "id": "FYP_notes:per_page:0012",
+          "pages": [
+            12
+          ],
+          "score": 4.0593
+        },
+        {
+          "id": "FYP_notes:per_page:0017",
+          "pages": [
+            17
+          ],
+          "score": 3.7577
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 3.5954
+        },
+        {
+          "id": "FYP_notes:per_page:0024",
+          "pages": [
+            24
+          ],
+          "score": 2.3537
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 2.3237
+        },
+        {
+          "id": "FYP_notes:per_page:0020",
+          "pages": [
+            20
+          ],
+          "score": 2.3228
+        },
+        {
+          "id": "FYP_notes:per_page:0005",
+          "pages": [
+            5
+          ],
+          "score": 2.322
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 2.3062
+        },
+        {
+          "id": "FYP_notes:per_page:0011",
+          "pages": [
+            11
+          ],
+          "score": 2.2918
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 0.5,
+      "id": "q06",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0017",
+          "pages": [
+            17
+          ],
+          "score": 6.3233
+        },
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 4.8648
+        },
+        {
+          "id": "FYP_notes:per_page:0011",
+          "pages": [
+            11
+          ],
+          "score": 4.6126
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 3.5954
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 3.2336
+        },
+        {
+          "id": "FYP_notes:per_page:0005",
+          "pages": [
+            5
+          ],
+          "score": 3.1892
+        },
+        {
+          "id": "FYP_notes:per_page:0003",
+          "pages": [
+            3
+          ],
+          "score": 3.0214
+        },
+        {
+          "id": "FYP_notes:per_page:0007",
+          "pages": [
+            7
+          ],
+          "score": 2.9833
+        },
+        {
+          "id": "FYP_notes:per_page:0004",
+          "pages": [
+            4
+          ],
+          "score": 2.9464
+        },
+        {
+          "id": "FYP_notes:per_page:0006",
+          "pages": [
+            6
+          ],
+          "score": 2.9446
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 0.5,
+      "id": "q07",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 6.3908
+        },
+        {
+          "id": "FYP_notes:per_page:0015",
+          "pages": [
+            15
+          ],
+          "score": 6.2315
+        },
+        {
+          "id": "FYP_notes:per_page:0014",
+          "pages": [
+            14
+          ],
+          "score": 5.8941
+        },
+        {
+          "id": "FYP_notes:per_page:0026",
+          "pages": [
+            26
+          ],
+          "score": 5.7288
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 5.2429
+        },
+        {
+          "id": "FYP_notes:per_page:0022",
+          "pages": [
+            22
+          ],
+          "score": 4.514
+        },
+        {
+          "id": "FYP_notes:per_page:0021",
+          "pages": [
+            21
+          ],
+          "score": 4.4859
+        },
+        {
+          "id": "FYP_notes:per_page:0016",
+          "pages": [
+            16
+          ],
+          "score": 4.4093
+        },
+        {
+          "id": "FYP_notes:per_page:0017",
+          "pages": [
+            17
+          ],
+          "score": 4.3956
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 4.3193
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 1.0,
+      "mrr": 0.25,
+      "id": "q08",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0011",
+          "pages": [
+            11
+          ],
+          "score": 9.2682
+        },
+        {
+          "id": "FYP_notes:per_page:0004",
+          "pages": [
+            4
+          ],
+          "score": 7.0114
+        },
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 6.9646
+        },
+        {
+          "id": "FYP_notes:per_page:0017",
+          "pages": [
+            17
+          ],
+          "score": 6.0176
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 5.9638
+        },
+        {
+          "id": "FYP_notes:per_page:0005",
+          "pages": [
+            5
+          ],
+          "score": 5.7946
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 5.6325
+        },
+        {
+          "id": "FYP_notes:per_page:0019",
+          "pages": [
+            19
+          ],
+          "score": 4.9441
+        },
+        {
+          "id": "FYP_notes:per_page:0026",
+          "pages": [
+            26
+          ],
+          "score": 4.78
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 4.475
+        }
+      ]
+    },
+    {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q09",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0006",
+          "pages": [
+            6
+          ],
+          "score": 3.933
+        },
+        {
+          "id": "FYP_notes:per_page:0021",
+          "pages": [
+            21
+          ],
+          "score": 2.9687
+        },
+        {
+          "id": "FYP_notes:per_page:0009",
+          "pages": [
+            9
+          ],
+          "score": 2.9538
+        },
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 2.7752
+        },
+        {
+          "id": "FYP_notes:per_page:0019",
+          "pages": [
+            19
+          ],
+          "score": 1.1064
+        },
+        {
+          "id": "FYP_notes:per_page:0020",
+          "pages": [
+            20
+          ],
+          "score": 1.0601
+        },
+        {
+          "id": "FYP_notes:per_page:0003",
+          "pages": [
+            3
+          ],
+          "score": 1.0381
+        },
+        {
+          "id": "FYP_notes:per_page:0005",
+          "pages": [
+            5
+          ],
+          "score": 1.0292
+        },
+        {
+          "id": "FYP_notes:per_page:0014",
+          "pages": [
+            14
+          ],
+          "score": 1.0219
+        },
+        {
+          "id": "FYP_notes:per_page:0012",
+          "pages": [
+            12
+          ],
+          "score": 1.0077
+        }
+      ]
+    },
+    {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q10",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0007",
+          "pages": [
+            7
+          ],
+          "score": 8.3767
+        },
+        {
+          "id": "FYP_notes:per_page:0014",
+          "pages": [
+            14
+          ],
+          "score": 3.2283
+        },
+        {
+          "id": "FYP_notes:per_page:0004",
+          "pages": [
+            4
+          ],
+          "score": 3.0876
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 2.5174
+        },
+        {
+          "id": "FYP_notes:per_page:0024",
+          "pages": [
+            24
+          ],
+          "score": 2.3261
+        },
+        {
+          "id": "FYP_notes:per_page:0011",
+          "pages": [
+            11
+          ],
+          "score": 2.3051
+        },
+        {
+          "id": "FYP_notes:per_page:0005",
+          "pages": [
+            5
+          ],
+          "score": 1.8467
+        },
+        {
+          "id": "FYP_notes:per_page:0026",
+          "pages": [
+            26
+          ],
+          "score": 1.8381
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 1.8151
+        },
+        {
+          "id": "FYP_notes:per_page:0006",
+          "pages": [
+            6
+          ],
+          "score": 1.6968
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "mrr": 0.14285714285714285,
+      "id": "q11",
+      "type": "single",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0009",
+          "pages": [
+            9
+          ],
+          "score": 10.264
+        },
+        {
+          "id": "FYP_notes:per_page:0015",
+          "pages": [
+            15
+          ],
+          "score": 8.4934
+        },
+        {
+          "id": "FYP_notes:per_page:0011",
+          "pages": [
+            11
+          ],
+          "score": 7.7985
+        },
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 7.5015
+        },
+        {
+          "id": "FYP_notes:per_page:0021",
+          "pages": [
+            21
+          ],
+          "score": 7.2717
+        },
+        {
+          "id": "FYP_notes:per_page:0022",
+          "pages": [
+            22
+          ],
+          "score": 7.2648
+        },
+        {
+          "id": "FYP_notes:per_page:0010",
+          "pages": [
+            10
+          ],
+          "score": 7.1661
+        },
+        {
+          "id": "FYP_notes:per_page:0006",
+          "pages": [
+            6
+          ],
+          "score": 6.9543
+        },
+        {
+          "id": "FYP_notes:per_page:0025",
+          "pages": [
+            25
+          ],
+          "score": 6.9515
+        },
+        {
+          "id": "FYP_notes:per_page:0016",
+          "pages": [
+            16
+          ],
+          "score": 6.5046
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "mrr": 0.16666666666666666,
+      "id": "q12",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0020",
+          "pages": [
+            20
+          ],
+          "score": 6.168
+        },
+        {
+          "id": "FYP_notes:per_page:0005",
+          "pages": [
+            5
+          ],
+          "score": 5.5495
+        },
+        {
+          "id": "FYP_notes:per_page:0012",
+          "pages": [
+            12
+          ],
+          "score": 5.4327
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 3.7541
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 3.6622
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 3.6003
+        },
+        {
+          "id": "FYP_notes:per_page:0017",
+          "pages": [
+            17
+          ],
+          "score": 3.5589
+        },
+        {
+          "id": "FYP_notes:per_page:0024",
+          "pages": [
+            24
+          ],
+          "score": 3.5014
+        },
+        {
+          "id": "FYP_notes:per_page:0007",
+          "pages": [
+            7
+          ],
+          "score": 3.4515
+        },
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 3.3076
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 0.5,
+      "id": "q13",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0024",
+          "pages": [
+            24
+          ],
+          "score": 8.6016
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 7.889
+        },
+        {
+          "id": "FYP_notes:per_page:0026",
+          "pages": [
+            26
+          ],
+          "score": 7.8629
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 7.4897
+        },
+        {
+          "id": "FYP_notes:per_page:0025",
+          "pages": [
+            25
+          ],
+          "score": 7.3922
+        },
+        {
+          "id": "FYP_notes:per_page:0017",
+          "pages": [
+            17
+          ],
+          "score": 7.2045
+        },
+        {
+          "id": "FYP_notes:per_page:0007",
+          "pages": [
+            7
+          ],
+          "score": 6.9281
+        },
+        {
+          "id": "FYP_notes:per_page:0018",
+          "pages": [
+            18
+          ],
+          "score": 6.5325
+        },
+        {
+          "id": "FYP_notes:per_page:0006",
+          "pages": [
+            6
+          ],
+          "score": 5.7647
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 5.367
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 0.3333333333333333,
+      "id": "q14",
+      "type": "single",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0005",
+          "pages": [
+            5
+          ],
+          "score": 7.3816
+        },
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 5.1493
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 4.4925
+        },
+        {
+          "id": "FYP_notes:per_page:0020",
+          "pages": [
+            20
+          ],
+          "score": 3.2924
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 3.1931
+        },
+        {
+          "id": "FYP_notes:per_page:0017",
+          "pages": [
+            17
+          ],
+          "score": 3.17
+        },
+        {
+          "id": "FYP_notes:per_page:0011",
+          "pages": [
+            11
+          ],
+          "score": 3.0986
+        },
+        {
+          "id": "FYP_notes:per_page:0007",
+          "pages": [
+            7
+          ],
+          "score": 2.9833
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 2.9379
+        },
+        {
+          "id": "FYP_notes:per_page:0022",
+          "pages": [
+            22
+          ],
+          "score": 2.8781
+        }
+      ]
+    },
+    {
+      "recall@1": 0.25,
+      "recall@3": 0.25,
+      "recall@5": 0.5,
+      "mrr": 1.0,
+      "id": "q15",
+      "type": "multi",
+      "math": false,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0007",
+          "pages": [
+            7
+          ],
+          "score": 5.0901
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 4.9212
+        },
+        {
+          "id": "FYP_notes:per_page:0015",
+          "pages": [
+            15
+          ],
+          "score": 3.4881
+        },
+        {
+          "id": "FYP_notes:per_page:0011",
+          "pages": [
+            11
+          ],
+          "score": 3.4179
+        },
+        {
+          "id": "FYP_notes:per_page:0005",
+          "pages": [
+            5
+          ],
+          "score": 3.4023
+        },
+        {
+          "id": "FYP_notes:per_page:0024",
+          "pages": [
+            24
+          ],
+          "score": 3.2634
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 3.1736
+        },
+        {
+          "id": "FYP_notes:per_page:0009",
+          "pages": [
+            9
+          ],
+          "score": 3.0988
+        },
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 3.0771
+        },
+        {
+          "id": "FYP_notes:per_page:0006",
+          "pages": [
+            6
+          ],
+          "score": 2.7244
+        }
+      ]
+    },
+    {
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.3333333333333333,
+      "mrr": 0.5,
+      "id": "q16",
+      "type": "multi",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0021",
+          "pages": [
+            21
+          ],
+          "score": 4.5976
+        },
+        {
+          "id": "FYP_notes:per_page:0015",
+          "pages": [
+            15
+          ],
+          "score": 4.3086
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 4.0845
+        },
+        {
+          "id": "FYP_notes:per_page:0008",
+          "pages": [
+            8
+          ],
+          "score": 3.7756
+        },
+        {
+          "id": "FYP_notes:per_page:0014",
+          "pages": [
+            14
+          ],
+          "score": 3.7747
+        },
+        {
+          "id": "FYP_notes:per_page:0026",
+          "pages": [
+            26
+          ],
+          "score": 3.5851
+        },
+        {
+          "id": "FYP_notes:per_page:0009",
+          "pages": [
+            9
+          ],
+          "score": 3.3521
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 2.9381
+        },
+        {
+          "id": "FYP_notes:per_page:0016",
+          "pages": [
+            16
+          ],
+          "score": 2.4314
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 2.2703
+        }
+      ]
+    },
+    {
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "mrr": 1.0,
+      "id": "q17",
+      "type": "multi",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0018",
+          "pages": [
+            18
+          ],
+          "score": 6.8365
+        },
+        {
+          "id": "FYP_notes:per_page:0024",
+          "pages": [
+            24
+          ],
+          "score": 5.1882
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 5.056
+        },
+        {
+          "id": "FYP_notes:per_page:0011",
+          "pages": [
+            11
+          ],
+          "score": 5.0261
+        },
+        {
+          "id": "FYP_notes:per_page:0025",
+          "pages": [
+            25
+          ],
+          "score": 4.9287
+        },
+        {
+          "id": "FYP_notes:per_page:0007",
+          "pages": [
+            7
+          ],
+          "score": 4.7156
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 4.292
+        },
+        {
+          "id": "FYP_notes:per_page:0020",
+          "pages": [
+            20
+          ],
+          "score": 3.6904
+        },
+        {
+          "id": "FYP_notes:per_page:0021",
+          "pages": [
+            21
+          ],
+          "score": 3.5157
+        },
+        {
+          "id": "FYP_notes:per_page:0009",
+          "pages": [
+            9
+          ],
+          "score": 3.2447
+        }
+      ]
+    },
+    {
+      "recall@1": 0.5,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "id": "q18",
+      "type": "multi",
+      "math": true,
+      "retrieved": [
+        {
+          "id": "FYP_notes:per_page:0011",
+          "pages": [
+            11
+          ],
+          "score": 8.0449
+        },
+        {
+          "id": "FYP_notes:per_page:0010",
+          "pages": [
+            10
+          ],
+          "score": 7.641
+        },
+        {
+          "id": "FYP_notes:per_page:0009",
+          "pages": [
+            9
+          ],
+          "score": 6.1697
+        },
+        {
+          "id": "FYP_notes:per_page:0007",
+          "pages": [
+            7
+          ],
+          "score": 5.5895
+        },
+        {
+          "id": "FYP_notes:per_page:0012",
+          "pages": [
+            12
+          ],
+          "score": 5.3209
+        },
+        {
+          "id": "FYP_notes:per_page:0016",
+          "pages": [
+            16
+          ],
+          "score": 4.8219
+        },
+        {
+          "id": "FYP_notes:per_page:0024",
+          "pages": [
+            24
+          ],
+          "score": 4.6777
+        },
+        {
+          "id": "FYP_notes:per_page:0023",
+          "pages": [
+            23
+          ],
+          "score": 4.2565
+        },
+        {
+          "id": "FYP_notes:per_page:0001",
+          "pages": [
+            1
+          ],
+          "score": 3.8157
+        },
+        {
+          "id": "FYP_notes:per_page:0002",
+          "pages": [
+            2
+          ],
+          "score": 3.729
+        }
+      ]
+    }
+  ]
+}

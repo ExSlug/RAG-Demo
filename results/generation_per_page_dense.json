@@ -1,0 +1,731 @@
+{
+  "index": "per_page_vision",
+  "k": 5,
+  "run_at": "2026-10-28T14:30:56+00:00",
+  "citation_pass_rate": 0.8235,
+  "n_answered": 17,
+  "false_abstentions": [
+    "q06"
+  ],
+  "abstention_rate_on_unanswerable": 1.0,
+  "failure_counts": {
+    "unretrieved_citation": 3
+  },
+  "per_question": [
+    {
+      "id": "q01",
+      "question": "What themes form the foundation for the application of the Hamming Scheme?",
+      "type": "single",
+      "answerable": true,
+      "answer": "The combination of symmetry, spectral decomposition, and orthogonal polynomial expansions forms the mathematical foundation that makes it possible to construct models that are both mathematically elegant and computationally efficient [FYP_notes.pdf p.26].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          26
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          24
+        ],
+        [
+          8
+        ]
+      ],
+      "input_tokens": 2130,
+      "output_tokens": 43,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          26
+        ]
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "What are the ways that binary vectors can be represented?",
+      "type": "single",
+      "answerable": true,
+      "answer": "Based on the provided lecture notes, binary vectors can be represented in the following ways:\n\n* As a set of coordinates $x = (x_1, \\dots, x_n)$ where each coordinate $x_i \\in \\{0, 1\\}$ [FYP_notes.pdf p.3].\n* As a subset $\\{i : x_i = 1\\} \\subseteq \\{1, \\dots, n\\}$ [FYP_notes.pdf p.3].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          3
+        ],
+        [
+          13
+        ],
+        [
+          9
+        ],
+        [
+          1
+        ],
+        [
+          12
+        ]
+      ],
+      "input_tokens": 2169,
+      "output_tokens": 101,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          3
+        ]
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Explain to me what's a Hamming distance?",
+      "type": "single",
+      "answerable": true,
+      "answer": "The Hamming distance between two elements $x, y \\in \\mathcal{H}_n$ is defined as the number of coordinates that must be changed to transform $x$ into $y$, which is given by the formula $$d(x, y) = |\\{i : x_i \\neq y_i\\}| [FYP\\_notes.pdf p.4]$$",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          4
+        ],
+        [
+          7
+        ],
+        [
+          5
+        ],
+        [
+          8
+        ],
+        [
+          3
+        ]
+      ],
+      "input_tokens": 2343,
+      "output_tokens": 79,
+      "ok": false,
+      "failures": [
+        "unretrieved_citation"
+      ],
+      "cited": [
+        [
+          "FYP\\_notes.pdf",
+          4
+        ]
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "Why do we use Hamming distance instead of the standard Euclidean distance?",
+      "type": "single",
+      "answerable": true,
+      "answer": "The natural notion of distance on the binary cube is not Euclidean distance, but Hamming distance [FYP_notes.pdf p.4]. Unlike Euclidean geometry, every coordinate contributes equally to the distance, so the geometry depends only on which coordinates differ, not on their positions [FYP_notes.pdf p.4].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          4
+        ],
+        [
+          7
+        ],
+        [
+          8
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ]
+      ],
+      "input_tokens": 2314,
+      "output_tokens": 65,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          4
+        ]
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Whats the point of simultaneously diagonalization?",
+      "type": "single",
+      "answerable": true,
+      "answer": "Without additional structure, finding the eigenvalues of a $2^n \\times 2^n$ matrix of the form $T = c_0 A_0 + c_1 A_1 + \\cdots + c_n A_n$ would generally be a difficult problem [FYP_notes.pdf p.8]. The simultaneous diagonalization theorem changes the situation completely by allowing the entire family to be diagonalized once and for all, meaning every operator $T \\in \\mathcal{A}$ has exactly the same eigenvectors and only the corresponding eigenvalues change [FYP_notes.pdf p.8].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          8
+        ],
+        [
+          13
+        ],
+        [
+          7
+        ],
+        [
+          17
+        ],
+        [
+          26
+        ]
+      ],
+      "input_tokens": 1986,
+      "output_tokens": 124,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          8
+        ]
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "Whats the key idea of section 3?",
+      "type": "single",
+      "answerable": true,
+      "answer": "Not in the notes.",
+      "abstained": true,
+      "retrieved_pages": [
+        [
+          17
+        ],
+        [
+          7
+        ],
+        [
+          14
+        ],
+        [
+          24
+        ],
+        [
+          4
+        ]
+      ],
+      "input_tokens": 2450,
+      "output_tokens": 5,
+      "ok": true,
+      "failures": [],
+      "cited": []
+    },
+    {
+      "id": "q07",
+      "question": "Whats the equation of the Krawtchouk polynomial?",
+      "type": "single",
+      "answerable": true,
+      "answer": "The binary Krawtchouk polynomials are given by the equation\n\n$$K_r(j) = \\sum_{i=0}^r (-1)^i \\binom{j}{i} \\binom{n-j}{r-i},$$\n\nwhere $0 \\le r, j \\le n$ [FYP_notes.pdf p.15].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          15
+        ],
+        [
+          16
+        ],
+        [
+          22
+        ],
+        [
+          23
+        ],
+        [
+          21
+        ]
+      ],
+      "input_tokens": 2315,
+      "output_tokens": 77,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          15
+        ]
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "Why are we studying so much about symmetry in the notes?",
+      "type": "single",
+      "answerable": true,
+      "answer": "Many models possess a natural symmetry where relabelling the coordinates does not change the value of the function (such functions are called *exchangeable*) [FYP_notes.pdf p.17]. This symmetry leads to a dramatic reduction in complexity, replacing an exponential-dimensional problem by one of dimension only $n+1$ [FYP_notes.pdf p.17].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          17
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ],
+        [
+          13
+        ],
+        [
+          7
+        ]
+      ],
+      "input_tokens": 2357,
+      "output_tokens": 79,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          17
+        ]
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What is regularity?",
+      "type": "single",
+      "answerable": true,
+      "answer": "Every distance graph is regular [FYP_notes.pdf p.6]. Starting from any vertex, one obtains a vertex at distance $r$ by choosing exactly $r$ coordinates to flip, and since there are \n\n$$\\binom{n}{r}$$\n\nsuch choices, every vertex has degree \n\n$$\\binom{n}{r}$$ [FYP_notes.pdf p.6]. Equivalently, every row sum of $A_r$ equals $\\binom{n}{r}$, meaning $A_r \\mathbf{1} = \\binom{n}{r}\\mathbf{1}$, where $\\mathbf{1}$ denotes the constant vector [FYP_notes.pdf p.6]. Consequently, the constant function is always an eigenvector of every distance matrix [FYP_notes.pdf p.6].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          6
+        ],
+        [
+          20
+        ],
+        [
+          25
+        ],
+        [
+          24
+        ],
+        [
+          19
+        ]
+      ],
+      "input_tokens": 2254,
+      "output_tokens": 168,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          6
+        ]
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "How to prove commutativity between operators?",
+      "type": "single",
+      "answerable": true,
+      "answer": "To prove that every pair of distance matrices commute, one uses the relation\n\n$$A_r A_s = \\sum_t p_{rs}^t A_t$$\n\nalong with the property that the intersection numbers satisfy\n\n$$p_{rs}^t = p_{sr}^t$$\n\n[FYP_notes.pdf p.7]. From this, it follows that\n\n$$A_r A_s = A_s A_r$$\n\n[FYP_notes.pdf p.7].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          7
+        ],
+        [
+          17
+        ],
+        [
+          11
+        ],
+        [
+          8
+        ],
+        [
+          22
+        ]
+      ],
+      "input_tokens": 2340,
+      "output_tokens": 106,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          7
+        ]
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "Give examples of when n=2, what are the characters equal to?",
+      "type": "single",
+      "answerable": true,
+      "answer": "For $n = 2$, the four characters are:\n\n$$\\chi_{00}(x) = 1,$$\n$$\\chi_{10}(x) = (-1)^{x_1},$$\n$$\\chi_{01}(x) = (-1)^{x_2},$$\n$$\\chi_{11}(x) = (-1)^{x_1+x_2}.$$\n\n[FYP_notes.pdf p.10]",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          10
+        ],
+        [
+          11
+        ],
+        [
+          12
+        ],
+        [
+          9
+        ],
+        [
+          13
+        ]
+      ],
+      "input_tokens": 2388,
+      "output_tokens": 95,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          10
+        ]
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "Whats the motivation of studying this entire notes?",
+      "type": "single",
+      "answerable": true,
+      "answer": "The study of these notes is motivated by two problems in mathematical finance: the construction of finite-dimensional market models for option pricing, and exchangeable portfolio risk [FYP_notes.pdf p.24].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          24
+        ],
+        [
+          10
+        ],
+        [
+          7
+        ],
+        [
+          23
+        ],
+        [
+          1
+        ]
+      ],
+      "input_tokens": 2461,
+      "output_tokens": 43,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          24
+        ]
+      ]
+    },
+    {
+      "id": "q13",
+      "question": "How does portfolio risk is related to the hamming scheme?",
+      "type": "single",
+      "answerable": true,
+      "answer": "Portfolio risk is related to the Hamming scheme in the following ways:\n\n* A stress scenario for a portfolio consisting of $n$ assets is represented by a binary vector $x = (x_1, \\dots, x_n)$ in the binary Hamming cube, where each coordinate indicates whether an asset experiences a loss or default [FYP_notes.pdf p.25]. \n* If the assets are exchangeable, the portfolio loss depends only on the total number of affected assets (its Hamming weight), making the loss function an exchangeable function on the Hamming cube [FYP_notes.pdf p.26, FYP_notes.pdf p.25].\n* This loss function admits a spectral expansion using Krawtchouk polynomials, where the coefficients $c_r$ quantify the contribution of different spectral levels (with low-order modes capturing broad systematic behavior and higher-order modes describing refined interaction effects) [FYP_notes.pdf p.25].\n* The Hamming scheme provides distance operators that act as scenario operators for portfolio risk, and the combination of symmetry, spectral decomposition, and orthogonal polynomial expansions allows for the construction of models that are mathematically elegant and computationally efficient [FYP_notes.pdf p.26].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          26
+        ],
+        [
+          1
+        ],
+        [
+          24
+        ],
+        [
+          25
+        ],
+        [
+          2
+        ]
+      ],
+      "input_tokens": 2307,
+      "output_tokens": 258,
+      "ok": false,
+      "failures": [
+        "unretrieved_citation"
+      ],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          25
+        ],
+        [
+          "FYP_notes.pdf",
+          26
+        ],
+        [
+          "FYP_notes.pdf p.26, FYP_notes.pdf",
+          25
+        ]
+      ]
+    },
+    {
+      "id": "q14",
+      "question": "Whats the objective of studying this note?",
+      "type": "single",
+      "answerable": true,
+      "answer": "The objective of these notes is to introduce the mathematical ideas required for two applications in mathematical finance (the construction of finite-dimensional spectral models for asset returns and option pricing, and the study of exchangeable portfolio losses and symmetry-preserving stress transformations) while emphasizing intuition rather than abstract algebraic formalism [FYP_notes.pdf p.1]. The objective is not to develop the general theory of association schemes, but rather to introduce only those ideas required for these two applications, emphasizing geometric intuition and concrete examples before presenting the underlying spectral theory [FYP_notes.pdf p.2].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          24
+        ],
+        [
+          1
+        ],
+        [
+          26
+        ],
+        [
+          10
+        ],
+        [
+          2
+        ]
+      ],
+      "input_tokens": 2354,
+      "output_tokens": 117,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          1
+        ],
+        [
+          "FYP_notes.pdf",
+          2
+        ]
+      ]
+    },
+    {
+      "id": "q15",
+      "question": "How many subsections are there in section 3?",
+      "type": "multi",
+      "answerable": true,
+      "answer": "Based on the provided notes, Section 3 has five subsections:\n- 3.1 Distance matrices [FYP_notes.pdf p.5]\n- 3.4 Composing distance operators [FYP_notes.pdf p.7]\n- 3.5 Commutativity [FYP_notes.pdf p.7]\n(along with subsections 3.2 and 3.3 implicitly preceding 3.4 based on the numbering sequence).",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          7
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ],
+        [
+          14
+        ],
+        [
+          9
+        ]
+      ],
+      "input_tokens": 2315,
+      "output_tokens": 99,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          5
+        ],
+        [
+          "FYP_notes.pdf",
+          7
+        ]
+      ]
+    },
+    {
+      "id": "q16",
+      "question": "What did the Krawtchouk polynomial section talked about?",
+      "type": "multi",
+      "answerable": true,
+      "answer": "The section on the Krawtchouk polynomials (Section 5) discusses the binary Krawtchouk polynomials, which describe the spectra of all distance operators on the Hamming cube [FYP_notes.pdf p.15]. It covers their definition and first examples, illustrating a parity property where even-indexed Krawtchouk polynomials are polynomials in $(n-2j)^2$ and odd-indexed ones are $(n-2j)$ times a polynomial in $(n-2j)^2$ [FYP_notes.pdf p.15]. It also details their generating function, orthogonality with respect to the binomial distribution, three-term recurrence relation, and their role in the spectral decomposition of distance matrices [FYP_notes.pdf p.15, FYP_notes.pdf p.16, FYP_notes.pdf p.14].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          15
+        ],
+        [
+          16
+        ],
+        [
+          14
+        ],
+        [
+          23
+        ],
+        [
+          21
+        ]
+      ],
+      "input_tokens": 2344,
+      "output_tokens": 180,
+      "ok": false,
+      "failures": [
+        "unretrieved_citation"
+      ],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          15
+        ],
+        [
+          "FYP_notes.pdf p.15, FYP_notes.pdf p.16, FYP_notes.pdf",
+          14
+        ]
+      ]
+    },
+    {
+      "id": "q17",
+      "question": "How to prove if a function is exchangeable?",
+      "type": "multi",
+      "answerable": true,
+      "answer": "To prove that a function $f: \\mathcal{H}_n \\to \\mathbb{R}$ is exchangeable, one must show that \n$$f(\\sigma x) = f(x)$$\nfor every $x \\in \\mathcal{H}_n$ and every permutation $\\sigma \\in S_n$ [FYP_notes.pdf p.18].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          18
+        ],
+        [
+          20
+        ],
+        [
+          19
+        ],
+        [
+          21
+        ],
+        [
+          24
+        ]
+      ],
+      "input_tokens": 2117,
+      "output_tokens": 79,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          18
+        ]
+      ]
+    },
+    {
+      "id": "q18",
+      "question": "how to prove that the characters are mutually orthogonal?",
+      "type": "multi",
+      "answerable": true,
+      "answer": "To prove that the characters are mutually orthogonal, one can use the identity $\\chi_a(x)\\chi_b(x) = \\chi_{a+b}(x)$ to express the inner product as \n\n$$\\langle \\chi_a, \\chi_b \\rangle = \\frac{1}{2^n} \\sum_{x \\in \\mathcal{H}_n} \\chi_{a+b}(x)$$ [FYP_notes.pdf p.10]. \n\nIf $a = b$, then $a + b = 0$, so every term equals $1$, giving $\\langle \\chi_a, \\chi_a \\rangle = 1$ [FYP_notes.pdf p.11]. \n\nIf $a \\neq b$, then $a + b \\neq 0$, meaning there exists a coordinate $i$ for which $(a + b)_i = 1$ [FYP_notes.pdf p.11]. By pairing every vector $x$ with the vector obtained by flipping its $i$-th coordinate, the corresponding character values have opposite signs and cancel in pairs, yielding [FYP_notes.pdf p.11]\n\n$$\\sum_{x \\in \\mathcal{H}_n} \\chi_{a + b}(x) = 0$$ [FYP_notes.pdf p.11].",
+      "abstained": false,
+      "retrieved_pages": [
+        [
+          10
+        ],
+        [
+          9
+        ],
+        [
+          12
+        ],
+        [
+          11
+        ],
+        [
+          13
+        ]
+      ],
+      "input_tokens": 2383,
+      "output_tokens": 291,
+      "ok": true,
+      "failures": [],
+      "cited": [
+        [
+          "FYP_notes.pdf",
+          10
+        ],
+        [
+          "FYP_notes.pdf",
+          11
+        ]
+      ]
+    },
+    {
+      "id": "q19",
+      "question": "How is volatility modelled using the Hamming scheme?",
+      "type": "unanswerable",
+      "answerable": false,
+      "answer": "Not in the notes.",
+      "abstained": true,
+      "retrieved_pages": [
+        [
+          26
+        ],
+        [
+          1
+        ],
+        [
+          24
+        ],
+        [
+          25
+        ],
+        [
+          2
+        ]
+      ],
+      "input_tokens": 2305,
+      "output_tokens": 5,
+      "ok": true,
+      "failures": [],
+      "cited": []
+    },
+    {
+      "id": "q20",
+      "question": "How to profit from using the Krawtchouk polynomial?",
+      "type": "unanswerable",
+      "answerable": false,
+      "answer": "Not in the notes.",
+      "abstained": true,
+      "retrieved_pages": [
+        [
+          15
+        ],
+        [
+          23
+        ],
+        [
+          16
+        ],
+        [
+          22
+        ],
+        [
+          21
+        ]
+      ],
+      "input_tokens": 2316,
+      "output_tokens": 5,
+      "ok": true,
+      "failures": [],
+      "cited": []
+    }
+  ]
+}

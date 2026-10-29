@@ -1,0 +1,8 @@
+pymupdf==2.0
+numpy==2.5.4
+rank-bm25==0.2.2
+sentence-transformers==6.2.0
+mcp==2.3.0
+python-dotenv==1.2.4
+google-genai==2.33.0
+pytest==9.1.1

@@ -1,0 +1,18 @@
+# Secrets and local data
+.env
+data/
+cache/
+logs/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# personal absolute paths
+.mcp.json
+
+# Local working notes
+LEARNING_LOG.md
+CLAUDE.md

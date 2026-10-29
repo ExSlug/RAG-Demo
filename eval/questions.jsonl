@@ -1,0 +1,20 @@
+{"id": "q01", "question": "What themes form the foundation for the application of the Hamming Scheme?", "type": "single", "math": false, "gold": [{"file": "FYP_notes.pdf", "page": 2}]}
+{"id": "q02", "question": "What are the ways that binary vectors can be represented?", "type": "single", "math": true, "gold": [{"file": "FYP_notes.pdf", "page": 3}]}
+{"id": "q03", "question": "Explain to me what's a Hamming distance?", "type": "single", "math": true, "gold": [{"file": "FYP_notes.pdf", "page": 4}]}
+{"id": "q04", "question": "Why do we use Hamming distance instead of the standard Euclidean distance?", "type": "single", "math": true, "gold": [{"file": "FYP_notes.pdf", "page": 4}]}
+{"id": "q05", "question": "Whats the point of simultaneously diagonalization?", "type": "single", "math": true, "gold": [{"file": "FYP_notes.pdf", "page": 8}]}
+{"id": "q06", "question": "Whats the key idea of section 3?", "type": "single", "math": false, "gold": [{"file": "FYP_notes.pdf", "page": 8}]}
+{"id": "q07", "question": "Whats the equation of the Krawtchouk polynomial?", "type": "single", "math": true, "gold": [{"file": "FYP_notes.pdf", "page": 15}]}
+{"id": "q08", "question": "Why are we studying so much about symmetry in the notes?", "type": "single", "math": false, "gold": [{"file": "FYP_notes.pdf", "page": 17}]}
+{"id": "q09", "question": "What is regularity?", "type": "single", "math": true, "gold": [{"file": "FYP_notes.pdf", "page": 6}]}
+{"id": "q10", "question": "How to prove commutativity between operators?", "type": "single", "math": true, "gold": [{"file": "FYP_notes.pdf", "page": 7}]}
+{"id": "q11", "question": "Give examples of when n=2, what are the characters equal to?", "type": "single", "math": true, "gold": [{"file": "FYP_notes.pdf", "page": 10}]}
+{"id": "q12", "question": "Whats the motivation of studying this entire notes?", "type": "single", "math": false, "gold": [{"file": "FYP_notes.pdf", "page": 1}]}
+{"id": "q13", "question": "How does portfolio risk is related to the hamming scheme?", "type": "single", "math": false, "gold": [{"file": "FYP_notes.pdf", "page": 1}]}
+{"id": "q14", "question": "Whats the objective of studying this note?", "type": "single", "math": false, "gold": [{"file": "FYP_notes.pdf", "page": 2}]}
+{"id": "q15", "question": "How many subsections are there in section 3?", "type": "multi", "math": false, "gold": [{"file": "FYP_notes.pdf", "page": 5}, {"file": "FYP_notes.pdf", "page": 6}, {"file": "FYP_notes.pdf", "page": 7}, {"file": "FYP_notes.pdf", "page": 8}]}
+{"id": "q16", "question": "What did the Krawtchouk polynomial section talked about?", "type": "multi", "math": true, "gold": [{"file": "FYP_notes.pdf", "page": 15}, {"file": "FYP_notes.pdf", "page": 16}, {"file": "FYP_notes.pdf", "page": 17}]}
+{"id": "q17", "question": "How to prove if a function is exchangeable?", "type": "multi", "math": true, "gold": [{"file": "FYP_notes.pdf", "page": 18}, {"file": "FYP_notes.pdf", "page": 19}]}
+{"id": "q18", "question": "how to prove that the characters are mutually orthogonal?", "type": "multi", "math": true, "gold": [{"file": "FYP_notes.pdf", "page": 10}, {"file": "FYP_notes.pdf", "page": 11}]}
+{"id": "q19", "question": "How is volatility modelled using the Hamming scheme?", "type": "unanswerable", "math": false, "gold": []}
+{"id": "q20", "question": "How to profit from using the Krawtchouk polynomial?", "type": "unanswerable", "math": false, "gold": []}
